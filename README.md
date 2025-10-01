@@ -21,10 +21,10 @@ pip install -r requirements.txt
 ## 📁 Dataset Layout
 mkdir -p data/images data/splits runs docs
 
-# Place your files like:
-# data/
-# ├─ images/                 # PNG/JPG images
-# └─ sample_labels.csv
+## Place your files like:
+ data/
+ ├─ images/                 # PNG/JPG images
+ └─ sample_labels.csv
 
 ## 🚀 Run Commands (End-to-End)
 1) Create splits
