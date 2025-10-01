@@ -49,22 +49,15 @@ python src/eval_nih.py --csv data/splits/test.csv --imgdir data/images \
 streamlit run src/app.py
 
 ## 📸 Examples
-# After you copy images to docs/, they will render:
-# ![Grad-CAM Example](docs/cam_example.png)
-# ![Streamlit Demo](docs/streamlit_ui.png)
-
-## 🧪 Results (demo)
-# Paste AUROC/F1/accuracy after evaluation; note the sample is demo-only.
 
 ## 🧰 Tech
-# Python · PyTorch · TorchXRayVision · scikit-learn · Streamlit
+Python · PyTorch · TorchXRayVision · scikit-learn · Streamlit
 
 ## 📂 Structure
-# src/ (all code), data/ (local only), runs/ (outputs), docs/ (images for README)
+src/ (all code), data/ (local only), runs/ (outputs), docs/ (images for README)
 
 ## 🔒 License
-# MIT (see LICENSE)
+MIT (see LICENSE)
 
 ## ⚠ Disclaimer
-# Research/Education only; not a medical device.
->>>>>>> 64476945 (Initial commit: Chest X-ray AI with XAI + LLM)
+Research/Education only; not a medical device.
