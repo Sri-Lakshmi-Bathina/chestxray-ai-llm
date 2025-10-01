@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# chestxray-ai-llm
-AI-powered chest X-ray classifier with Grad-CAM explainability and LLM reporting (education demo)
-=======
 # 🩺 Chest X-ray AI with XAI + LLM (Education Demo)
 
-**⚠ Research/Education only — not for clinical use or medical advice.**
+**Research/Education only — not for clinical use or medical advice.**
 
 GitHub repo: https://github.com/Sri-Lakshmi-Bathina/chestxray-ai-llm
 
@@ -31,25 +27,25 @@ mkdir -p data/images data/splits runs docs
 # └─ sample_labels.csv
 
 ## 🚀 Run Commands (End-to-End)
-# 1) Create splits
+1) Create splits
 python src/prepare_sample.py --csv data/sample_labels.csv --imgdir data/images --out data/splits --seed 42
 
-# 2) Pretrained inference
+2) Pretrained inference
 python src/quick_infer_pretrained.py --images "data/images/*.png" --out runs/pretrained_infer
 
-# 3) Copy a few CAM images into docs/ for the README
+3) Copy a few CAM images into docs/ for the README
 cp runs/pretrained_infer/*cam*.png docs/ 2>/dev/null || true
 
-# 4) Light fine-tuning (optional)
+4) Light fine-tuning (optional)
 python src/train_nih.py --train_csv data/splits/train.csv --val_csv data/splits/val.csv \
   --imgdir data/images --epochs 5 --batch_size 16 --lr 1e-4 --freeze_backbone 1 \
   --out runs/sample_d121
 
-# 5) Evaluation
+5) Evaluation
 python src/eval_nih.py --csv data/splits/test.csv --imgdir data/images \
   --ckpt runs/sample_d121/best.pt --out runs/sample_d121/test_metrics.json
 
-# 6) Streamlit app
+6) Streamlit app
 streamlit run src/app.py
 
 ## 📸 Examples
