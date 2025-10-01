@@ -1,4 +1,4 @@
-# 🩺 Chest X-ray AI with XAI + LLM (Education Demo)
+# 🩺 Chest X-ray AI with Grad-CAM + LLM (Education Demo)
 
 **Research/Education only — not for clinical use or medical advice.**
 
